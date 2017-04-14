@@ -37,9 +37,6 @@ quick_replies_list = [{
     "payload":"Jokes",
 }
 ]
-
-
-
 @app.route('/', methods=['GET'])
 def handle_verification():
     print "Handling Verification."
