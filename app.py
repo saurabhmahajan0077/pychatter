@@ -6,7 +6,7 @@ import os
 import praw
 
 app = Flask(__name__)
-app.config['SQL_ALCHEMY_DATABASE_URI'] = os.environ['DATABSE_URL']
+app.config['SQL_ALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 reddit = praw.Reddit(client_id=os.environ['id'],
                      client_secret=os.environ['secret'],
